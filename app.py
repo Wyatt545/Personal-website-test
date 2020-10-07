@@ -9,7 +9,7 @@ import sys
 from flask import Flask, render_template, abort
 from jinja2.exceptions import TemplateNotFound
 
-app = Flask(__name__)
+app = Flask(__name__, static_url_path='/static')
 
 #==============================Routes=======================================
 @app.route("/", methods = ["GET"])
